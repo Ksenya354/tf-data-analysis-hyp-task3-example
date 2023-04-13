@@ -9,7 +9,7 @@ def solution(x: np.array, y: np.array) -> bool: # Одна или две выб�
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    a = scipy.stats.ttest_ind(x, y, alternative='less')[1]
+    a = scipy.stats.ttest_ind(x, y, alternative='two-sided')[1]
     p = 0.03
     if a <= p:
       return True
